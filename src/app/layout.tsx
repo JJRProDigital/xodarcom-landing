@@ -107,12 +107,12 @@ export default function RootLayout({
         <main className="pt-[72px]">{children}</main>
         {/* Emojis solares flotantes: distribuidos y animados suavemente */}
         <div aria-hidden className="floating-emojis">
-          <div className="sun-emoji" style={{ left: '5%', top: '20%', fontSize: '28px', ['--dur' as any]: '18s' }}>☀️</div>
-          <div className="sun-emoji" style={{ left: '20%', top: '70%', fontSize: '22px', ['--dur' as any]: '15s' }}>☀️</div>
-          <div className="sun-emoji" style={{ left: '38%', top: '30%', fontSize: '26px', ['--dur' as any]: '20s' }}>☀️</div>
-          <div className="sun-emoji" style={{ left: '55%', top: '65%', fontSize: '24px', ['--dur' as any]: '17s' }}>☀️</div>
-          <div className="sun-emoji" style={{ left: '72%', top: '25%', fontSize: '30px', ['--dur' as any]: '19s' }}>☀️</div>
-          <div className="sun-emoji" style={{ left: '88%', top: '55%', fontSize: '20px', ['--dur' as any]: '16s' }}>☀️</div>
+          <div className="sun-emoji" style={{ left: '5%', top: '20%', fontSize: '28px', '--dur': '18s' } as React.CSSProperties}>☀️</div>
+          <div className="sun-emoji" style={{ left: '20%', top: '70%', fontSize: '22px', '--dur': '15s' } as React.CSSProperties}>☀️</div>
+          <div className="sun-emoji" style={{ left: '38%', top: '30%', fontSize: '26px', '--dur': '20s' } as React.CSSProperties}>☀️</div>
+          <div className="sun-emoji" style={{ left: '55%', top: '65%', fontSize: '24px', '--dur': '17s' } as React.CSSProperties}>☀️</div>
+          <div className="sun-emoji" style={{ left: '72%', top: '25%', fontSize: '30px', '--dur': '19s' } as React.CSSProperties}>☀️</div>
+          <div className="sun-emoji" style={{ left: '88%', top: '55%', fontSize: '20px', '--dur': '16s' } as React.CSSProperties}>☀️</div>
         </div>
         <footer className="border-t border-black/5 bg-white">
           <div className="container py-8 grid md:grid-cols-3 gap-6 text-sm">

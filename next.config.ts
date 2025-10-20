@@ -7,7 +7,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "xodarcom.com",
       },
+      {
+        protocol: "https",
+        hostname: "fra.cloud.appwrite.io",
+      },
     ],
+  },
+  experimental: {
+    optimizePackageImports: ['framer-motion'],
   },
 };
 
