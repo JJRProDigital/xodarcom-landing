@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# lighthouse reports
+lighthouse-report.html
+lighthouse-report.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db

@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Xodarcom Landing Page
 
-## Getting Started
+Landing page moderna desarrollada con Next.js 15, React 19, TypeScript y Tailwind CSS.
 
-First, run the development server:
+## 🚀 Características
 
+- ⚡ **Next.js 15** con App Router
+- ⚛️ **React 19** con las últimas características
+- 🎨 **Tailwind CSS 4** para estilos
+- 📱 **Diseño responsivo**
+- 🎭 **Framer Motion** para animaciones
+- 🔧 **TypeScript** para tipado estático
+- 🚀 **Optimizado para rendimiento**
+
+## 🛠️ Tecnologías
+
+- **Framework**: Next.js 15.5.4
+- **Frontend**: React 19.1.0
+- **Estilos**: Tailwind CSS 4
+- **Animaciones**: Framer Motion 12.23.22
+- **Lenguaje**: TypeScript 5
+- **Linting**: ESLint 9
+
+## 📦 Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tu-usuario/xodarcom-landing.git
+cd xodarcom-landing
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Ejecuta el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Learn More
+## 🚀 Scripts Disponibles
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Inicia el servidor de desarrollo con Turbopack
+- `npm run build` - Construye la aplicación para producción
+- `npm run start` - Inicia el servidor de producción
+- `npm run lint` - Ejecuta el linter de ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Estructura del Proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── globals.css      # Estilos globales
+│   ├── layout.tsx       # Layout principal
+│   └── page.tsx         # Página principal
+public/                  # Archivos estáticos
+```
 
-## Deploy on Vercel
+## 🚀 Despliegue
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Vercel (Recomendado)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+La forma más fácil de desplegar tu aplicación Next.js es usar [Vercel Platform](https://vercel.com/new).
+
+### Otras plataformas
+
+- **Netlify**: Conecta tu repositorio de GitHub
+- **Railway**: Despliegue automático desde GitHub
+- **DigitalOcean App Platform**: Despliegue con Docker
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o pull request para discutir los cambios que te gustaría hacer.
+
+## 📞 Contacto
+
+- **Proyecto**: Xodarcom Landing Page
+- **Desarrollador**: [Tu Nombre]
+- **Email**: [tu-email@ejemplo.com]
