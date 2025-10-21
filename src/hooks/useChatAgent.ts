@@ -98,14 +98,41 @@ export function useChatAgent(): UseChatAgentReturn {
         throw new Error(`HTTP ${response.status}`);
       }
 
-      const data = await response.json();
+      let data;
+      const contentType = response.headers.get("content-type");
+      
+      if (contentType && contentType.includes("application/json")) {
+        data = await response.json();
+      } else {
+        // Si no es JSON, obtener como texto
+        const textResponse = await response.text();
+        console.log("Respuesta del webhook (texto):", textResponse);
+        data = { message: textResponse };
+      }
+      
+      // Debug: log de la respuesta
+      console.log("Respuesta del webhook:", data);
       
       // Simular delay de escritura
       await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 2000));
       
+      // Manejar diferentes formatos de respuesta
+      let responseText = "Gracias por tu mensaje. Te contactaremos pronto.";
+      
+      if (typeof data === "string") {
+        responseText = data;
+      } else if (data && typeof data === "object") {
+        responseText = data.response || 
+                      data.message || 
+                      data.text || 
+                      data.answer ||
+                      data.reply ||
+                      JSON.stringify(data);
+      }
+      
       // Añadir respuesta del agente
       addMessage({
-        text: data.response || data.message || "Gracias por tu mensaje. Te contactaremos pronto.",
+        text: responseText,
         sender: "agent"
       });
 
