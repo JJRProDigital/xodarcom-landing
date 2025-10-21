@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import ChatAgent from "@/components/ChatAgent";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -162,6 +163,9 @@ export default function RootLayout({
             }}
           />
         </footer>
+        
+        {/* Chat Agent */}
+        <ChatAgent />
       </body>
     </html>
   );
