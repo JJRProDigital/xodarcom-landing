@@ -122,7 +122,8 @@ export function useChatAgent(): UseChatAgentReturn {
       if (typeof data === "string") {
         responseText = data;
       } else if (data && typeof data === "object") {
-        responseText = data.response || 
+        responseText = data.output ||        // N8N format
+                      data.response || 
                       data.message || 
                       data.text || 
                       data.answer ||
